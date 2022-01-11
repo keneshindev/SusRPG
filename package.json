@@ -1,0 +1,14 @@
+{
+  "name": "susrpg",
+  "version": "1.0.0",
+  "description": "sus RPG",
+  "main": "index.js",
+  "author": "Keneshin",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.2",
+    "lodash": "^4.17.21",
+    "ws": "^8.4.0"
+  }
+}

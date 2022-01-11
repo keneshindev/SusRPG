@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+h1 {
+  font-size: 45px;
+  color: white;
+}
+
+div#canvas {
+  background: white;
+  border-radius: 5px;
+  color: black;
+  user-select: none;
+  font-size: 30px;
+}
+
+input[type="text"] {
+  border: 1px solid white;
+  margin: 5px 0;
+  padding: 0 5px;
+  text-align: center;
+  border-radius: 2.5px;
+  background: black;
+  color: white;
+}
+
+button {
+  border-radius: 2.5px;
+  padding: 0 5px;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+div.keys {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+div.subkeys {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.key {
+  color: white;
+  border-radius: 5px;
+  margin: 3px;
+  background: #666;
+  padding-bottom: 3px;
+}
+
+div.key.down {
+  padding-bottom: 0;
+  padding-top: 3px;
+  background: transparent;
+}
+
+div.key>span {
+  padding: 0 10px;
+  background: #333;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+a.unit:not(.player) {
+  color: white;
+}
+
+a.wall {
+  color: black;
+}
+
+a.player {
+  font-weight: 900;
+  color: red;
+}
+
+a.otherPlayer {
+  font-weight: 100;
+}
+
+h1 {
+  display: flex;
+}
+
+h1 > span {
+  white-space: pre;
+  font-size: 6px;
+  font-weight: 900;
+}
+
+div.chat {
+  overflow-y: auto;
+  width: 500px;
+  height: 300px;
+  background: #333;
+  border: 1px solid #666;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px;
+}
+
+div.game {
+  display: flex;
+  flex-direction: column;
+}
+
+div.message {
+  width: 100%;
+  display: flex;
+  margin: 5px 0;
+  background: #444;
+  padding: 2.5px;
+  border-radius: 2.5px;
+}
+
+div.message:first-child {
+  margin-top: 0;
+}
+
+div.message:last-child {
+  margin-bottom: 0;
+}
+
+div.message > div.nickname[data-color="red"] {
+  color: red;
+}
+
+div.message > div.content {
+  margin-left: 5px;
+}

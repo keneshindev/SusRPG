@@ -1,0 +1,37 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <title>SUS GAME</title>
+  <link href="./styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h1>SUS GAME</h1>
+  <h5>[pre-pre-pre-pre-alpha-0.1]</h6>
+  <div class="game">
+    <div class="keys">
+      <div onclick="document.onkeydown({ key: 'w'}); document.onkeyup({ key: 'w'});" class="key" data-key="w">
+        <span>W</span>
+      </div>
+      <div class="subkeys">
+        <div onclick="document.onkeydown({ key: 'a'}); document.onkeyup({ key: 'a'});" class="key" data-key="a">
+          <span>A</span>
+        </div>
+        <div onclick="document.onkeydown({ key: 's'}); document.onkeyup({ key: 's'});" class="key" data-key="s">
+          <span>S</span>
+        </div>
+        <div onclick="document.onkeydown({ key: 'd'}); document.onkeyup({ key: 'd'});" class="key" data-key="d">
+          <span>D</span>
+        </div>
+      </div>
+    </div>
+    <div id="canvas"></div>
+  </div>
+  <div class="chat">
+  </div>
+  <input type="text" id="chatField">
+  <button onclick="window.sendChat()">Отправить!</button>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>
